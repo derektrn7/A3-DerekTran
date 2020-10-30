@@ -6,3 +6,7 @@
 **************************************************/
 
 #include "MurderGame.h"
+#include "Suspect.cpp"
+int main() {
+	
+}

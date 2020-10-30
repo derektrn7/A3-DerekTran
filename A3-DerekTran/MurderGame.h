@@ -4,9 +4,28 @@
  Author: Derek Tran
  Purpose: Main Header
 **************************************************/
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <cstdlib>
+#include "Suspect.cpp"
+#include "Item.cpp"
+#pragma once
+
+using namespace std;
+using std::vector;
 
 #pragma once
-class MurderGame
-{
-};
+
+string askForString(string question);
+
+void displayDescription();
+void displayTitle();
+void displayRules();
+void playGame();
+void gameOver();
+void displayScore();
+void resetGame();
+void playerMovement(string userInput);
 
