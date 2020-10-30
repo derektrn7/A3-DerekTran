@@ -7,6 +7,4 @@
 
 #include "Suspect.h"
 
-class Suspect {
 
-};

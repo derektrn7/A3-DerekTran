@@ -18,8 +18,8 @@ class Item{
 public:
 	//Constructors
 	Item(string name);
-	void itemCondition(string item);
-	void itemMurder(bool murder);
+	void setItemCondition(string item);
+	void setItemMurder(bool murder);
 	//Destructor
 	~Item();
 	//Accessor Functions

@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include "Suspect.cpp"
 #include "Item.cpp"
+#include "Player.cpp"
 #pragma once
 
 using namespace std;
@@ -23,9 +24,11 @@ string askForString(string question);
 void displayDescription();
 void displayTitle();
 void displayRules();
+void initialiseGame();
 void playGame();
 void gameOver();
 void displayScore();
 void resetGame();
 void playerMovement(string userInput);
+
 

@@ -19,8 +19,8 @@ class Suspect{
 public:
 	//Constructors
 	Suspect(string name);
-	void suspectRole(string item);
-    void suspectAlibi(string item);
+	void setSuspectRole(string item);
+    void setSuspectAlibi(string item);
 	void ifMurder(bool murder);
 	//Destructor
 	~Suspect();

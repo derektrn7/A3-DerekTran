@@ -20,6 +20,7 @@ using std::vector;
 class Player{
 public:
 	//Constructors
+	Player();
 	Player(string name);
 	//Destructor
 	~Player();

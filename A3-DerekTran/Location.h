@@ -20,10 +20,10 @@ class Location{
 public:
 	//Constructors
 	Location(string name);
-	void locationCondition(string condition);
-	void locationSuspects(Suspect);
-	void locationItems(Item);
-	void locationMurder(bool murder);
+	void setLocationCondition(string condition);
+	void setLocationSuspects(Suspect);
+	void setLocationItems(Item);
+	void setLocationMurder(bool murder);
 	//Accessor Functions
 	string getName();
 	string getCondition();
