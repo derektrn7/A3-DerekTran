@@ -8,10 +8,10 @@
 #include "Player.h"
 
 Player::Player() {
-	playerName = "Undefined"
+	playerName = "Undefined";
 	playerTurn = 0;
 	playerScore = 0;
-	vector<Item> playerInventory;
+	playerInventory = {};
 }
 
 Player::Player(string name) {
@@ -19,8 +19,14 @@ Player::Player(string name) {
 };
 
 string Player::getName() {return playerName;};
-string Player::getInventory() {return playerInventory;};
-int Player::getTurn() {return playerTurn;};;
+string Player::getInventory() {
+	string inventory = "";
+	for (int i = 0; i < playerInventory.size(); i++){
+		string newLine = "\n";
+		inventory += playerInventory[i].getItem() + newLine;
+		};
+	};
+int Player::getTurn() {return playerTurn;};
 int Player::getScore() {return playerScore;};
 
 void Player::addInventory(Item) {} ;
