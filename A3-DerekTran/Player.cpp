@@ -7,19 +7,24 @@
 
 #include "Player.h"
 
-//Instance Variables
-//string playerName;
-//vector<Item> playerInventory;
-//int playerTurn;
-//int playerScore;
-
-//Constructors
 Player::Player() {
-	//playerName = "test";
+	playerName = "Undefined"
+	playerTurn = 0;
+	playerScore = 0;
+	vector<Item> playerInventory;
 }
 
 Player::Player(string name) {
 	playerName = name;
-	playerTurn = 0;
-	playerScore = 0;
-}
+};
+
+string Player::getName() {return playerName;};
+string Player::getInventory() {return playerInventory;};
+int Player::getTurn() {return playerTurn;};;
+int Player::getScore() {return playerScore;};
+
+void Player::addInventory(Item) {} ;
+void Player::removeInventory(Item) {};
+void Player::updateTurn() {};
+void Player::updateScore(int newScore) {};
+void Player::resetScore(int score) {};
